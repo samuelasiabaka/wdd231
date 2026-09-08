@@ -1,0 +1,46 @@
+@media (min-width: 720px) {
+  #menu {
+    display: none;
+  }
+
+  header {
+    background-color: var(--background);
+  }
+  .site-name {
+    color: var(--text);
+  }
+
+  nav {
+    flex-basis: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation a {
+    border-top: none;
+    padding: 0.6rem 1.25rem;
+    border-radius: 4px;
+  }
+
+  .home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .home-grid .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .course-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+}
