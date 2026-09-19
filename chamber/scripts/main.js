@@ -1,16 +1,16 @@
-const $ = (selector, scope = document) => scope.querySelector(selector);
-const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
+const qs = (selector, scope = document) => scope.querySelector(selector);
+const qsa = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 
 function setYearAndModifiedDate() {
-  const year = $('#copyright-year');
-  const modified = $('#last-modified');
+  const year = qs('#copyright-year');
+  const modified = qs('#last-modified');
   if (year) year.textContent = new Date().getFullYear();
   if (modified) modified.textContent = `Last Modified: ${document.lastModified}`;
 }
 
 function setupNavigation() {
-  const button = $('.menu-button');
-  const nav = $('.primary-nav');
+  const button = qs('.menu-button');
+  const nav = qs('.primary-nav');
   if (!button || !nav) return;
   button.addEventListener('click', () => {
     const open = nav.classList.toggle('open');
@@ -44,7 +44,7 @@ function memberCard(member) {
 }
 
 async function loadDirectory() {
-  const container = $('#members');
+  const container = qs('#members');
   if (!container) return;
   try {
     const response = await fetch('data/members.json');
@@ -58,13 +58,13 @@ async function loadDirectory() {
 }
 
 function setupViewToggle() {
-  const members = $('#members');
+  const members = qs('#members');
   if (!members) return;
-  $$('.view-button').forEach(button => {
+  qsa('.view-button').forEach(button => {
     button.addEventListener('click', () => {
       const isList = button.dataset.view === 'list';
       members.classList.toggle('list', isList);
-      $$('.view-button').forEach(btn => {
+      qsa('.view-button').forEach(btn => {
         btn.classList.toggle('active', btn === button);
         btn.setAttribute('aria-pressed', String(btn === button));
       });
@@ -72,11 +72,11 @@ function setupViewToggle() {
     });
   });
   const saved = localStorage.getItem('lcci-directory-view');
-  if (saved === 'list') $('[data-view="list"]')?.click();
+  if (saved === 'list') qs('[data-view="list"]')?.click();
 }
 
 async function loadWeather() {
-  const card = $('#weather-card');
+  const card = qs('#weather-card');
   if (!card) return;
   try {
     const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=6.5244&longitude=3.3792&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&timezone=Africa%2FLagos');
@@ -101,8 +101,8 @@ async function loadWeather() {
 }
 
 function setupJoinForm() {
-  const form = $('#join-form');
-  const success = $('#form-success');
+  const form = qs('#join-form');
+  const success = qs('#form-success');
   if (!form || !success) return;
   form.addEventListener('submit', event => {
     event.preventDefault();
