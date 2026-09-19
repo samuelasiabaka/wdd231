@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Lagos Enterprise Hub",
+    "tagline": "Business advisory & innovation",
+    "address": "Victoria Island, Lagos",
+    "phone": "+234 803 555 0101",
+    "email": "hello@lagosenterprise.example",
+    "website": "https://example.com",
+    "image": "lagos-enterprise.svg",
+    "membership": 3,
+    "category": "Business Services",
+    "description": "Advisory and capacity-building services for growing enterprises."
+  },
+  {
+    "name": "Atlantic Foods & Supply",
+    "tagline": "Food distribution & logistics",
+    "address": "Ikeja, Lagos",
+    "phone": "+234 803 555 0102",
+    "email": "contact@atlanticfoods.example",
+    "website": "https://example.com",
+    "image": "atlantic-foods.svg",
+    "membership": 2,
+    "category": "Food & Logistics",
+    "description": "Local sourcing, wholesale distribution, and supply-chain services."
+  },
+  {
+    "name": "Mainland Digital Works",
+    "tagline": "Technology & digital services",
+    "address": "Yaba, Lagos",
+    "phone": "+234 803 555 0103",
+    "email": "team@mainlanddigital.example",
+    "website": "https://example.com",
+    "image": "mainland-digital.svg",
+    "membership": 3,
+    "category": "Technology",
+    "description": "Web, software, and digital transformation services for businesses."
+  },
+  {
+    "name": "Lagos Trade & Freight",
+    "tagline": "Trade support & freight",
+    "address": "Apapa, Lagos",
+    "phone": "+234 803 555 0104",
+    "email": "info@lagostrade.example",
+    "website": "https://example.com",
+    "image": "lagos-trade.svg",
+    "membership": 2,
+    "category": "Trade & Logistics",
+    "description": "Freight coordination and business support for local and international trade."
+  },
+  {
+    "name": "Green Lagos Manufacturing",
+    "tagline": "Local manufacturing",
+    "address": "Surulere, Lagos",
+    "phone": "+234 803 555 0105",
+    "email": "office@greenlagos.example",
+    "website": "https://example.com",
+    "image": "green-lagos.svg",
+    "membership": 1,
+    "category": "Manufacturing",
+    "description": "Manufacturing and packaging solutions serving businesses across Lagos."
+  },
+  {
+    "name": "Island Creative Studio",
+    "tagline": "Branding & communications",
+    "address": "Lekki, Lagos",
+    "phone": "+234 803 555 0106",
+    "email": "studio@islandcreative.example",
+    "website": "https://example.com",
+    "image": "island-creative.svg",
+    "membership": 1,
+    "category": "Creative Services",
+    "description": "Brand identity, content, and communications support for growing brands."
+  },
+  {
+    "name": "Lagos Business Advisory Partners",
+    "tagline": "Finance & professional services",
+    "address": "Ikoyi, Lagos",
+    "phone": "+234 803 555 0107",
+    "email": "info@lbap.example",
+    "website": "https://example.com",
+    "image": "business-advisory.svg",
+    "membership": 3,
+    "category": "Professional Services",
+    "description": "Accounting, strategy, and business advisory support for enterprises."
+  },
+  {
+    "name": "Lagos Hospitality Network",
+    "tagline": "Hospitality & tourism",
+    "address": "Victoria Island, Lagos",
+    "phone": "+234 803 555 0108",
+    "email": "hello@lagoshospitality.example",
+    "website": "https://example.com",
+    "image": "hospitality.svg",
+    "membership": 2,
+    "category": "Hospitality",
+    "description": "Hospitality operators collaborating on service standards and tourism growth."
+  }
+]

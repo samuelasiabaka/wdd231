@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-NG">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Browse a responsive member directory for the Lagos Chamber of Commerce and Industry WDD 231 project."
+    />
+    <meta name="author" content="Samuel C. Asiabaka" />
+    <meta property="og:title" content="LCCI Business Directory" />
+    <meta
+      property="og:description"
+      content="Explore businesses and organizations in a responsive Lagos chamber member directory."
+    />
+    <meta property="og:image" content="images/lcci-social.svg" />
+    <meta property="og:url" content="directory.html" />
+    <meta property="og:type" content="website" />
+    <title>Directory | LCCI</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">LCCI</span
+          ><span class="brand-text"
+            ><strong>Lagos Chamber of Commerce & Industry</strong
+            ><span>Business • Community • Opportunity</span></span
+          ></a
+        ><button
+          class="menu-button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a class="active" href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <span class="eyebrow">Member network</span>
+        <h1 class="page-title">Business Directory</h1>
+        <p class="page-intro">
+          Explore chamber member profiles by grid or list view. Member
+          information is loaded dynamically from
+          <code>data/members.json</code> using Fetch and async/await.
+        </p>
+        <div class="directory-controls" aria-label="Directory view controls">
+          <button
+            class="view-button active"
+            data-view="grid"
+            aria-pressed="true"
+          >
+            ▦ Grid</button
+          ><button class="view-button" data-view="list" aria-pressed="false">
+            ☰ List
+          </button>
+        </div>
+        <section aria-label="LCCI members">
+          <div id="members" class="members">
+            <div class="banner"><strong>Loading directory…</strong></div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h2 class="footer-title">Lagos Chamber of Commerce & Industry</h2>
+            <p>
+              Commerce House, 1 Idowu Taylor Street<br />Victoria Island, Lagos,
+              Nigeria
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Contact</h2>
+            <p>
+              <a href="mailto:info@lagoschamber.com">info@lagoschamber.com</a
+              ><br /><a href="tel:+2349130362431">+234 913 036 2431</a>
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Academic Project</h2>
+            <p>WDD 231 Class Project<br />Samuel C. Asiabaka</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="copyright-year"></span> LCCI project demonstration. </span
+          ><span id="last-modified"></span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

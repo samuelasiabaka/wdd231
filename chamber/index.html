@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-NG">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Lagos Chamber of Commerce and Industry student project site featuring business resources, member directory, local discovery, weather, and membership information."
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <meta
+      property="og:title"
+      content="Lagos Chamber of Commerce and Industry"
+    />
+    <meta
+      property="og:description"
+      content="A responsive WDD 231 chamber project for business discovery, member networking, and community resources in Lagos."
+    />
+    <meta property="og:image" content="images/lcci-social.svg" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:type" content="website" />
+    <title>LCCI | Lagos Chamber of Commerce & Industry</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">LCCI</span
+          ><span class="brand-text"
+            ><strong>Lagos Chamber of Commerce & Industry</strong
+            ><span>Business • Community • Opportunity</span></span
+          ></a
+        >
+        <button
+          class="menu-button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div>
+            <span class="eyebrow">Lagos business community</span>
+            <h1>Connect. Grow. Trade. Thrive.</h1>
+            <p>
+              Explore local businesses, discover opportunities, connect with the
+              chamber community, and find practical resources for doing business
+              in Lagos.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="directory.html"
+                >Explore Directory</a
+              ><a class="btn btn-secondary" href="join.html">Become a Member</a>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <strong>8+</strong><span>Directory profiles</span>
+            </div>
+            <div class="stat">
+              <strong>4</strong><span>Core site pages</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong><span>Online access</span>
+            </div>
+            <div class="stat">
+              <strong>1</strong><span>Connected community</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container cards-2">
+          <div>
+            <div class="section-header">
+              <span class="eyebrow">Plan your day</span>
+              <h2>Lagos at a glance</h2>
+            </div>
+            <div id="weather-card" class="weather-card">
+              <p>Loading current Lagos weather…</p>
+            </div>
+          </div>
+          <div>
+            <div class="section-header">
+              <span class="eyebrow">Member spotlight</span>
+              <h2>Businesses worth discovering</h2>
+            </div>
+            <div class="info-card">
+              <div class="icon-circle">★</div>
+              <h3>Mainland Digital Works</h3>
+              <p>
+                A sample technology member profile demonstrating how the
+                directory can help businesses improve visibility and connect
+                with the wider chamber community.
+              </p>
+              <br /><a class="btn btn-secondary" href="directory.html"
+                >View Members</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" style="background: var(--light-green)">
+        <div class="container">
+          <div class="section-header">
+            <span class="eyebrow">Why the chamber matters</span>
+            <h2>Resources for a growing business community</h2>
+          </div>
+          <div class="cards-3">
+            <article class="info-card">
+              <div class="icon-circle">N</div>
+              <h3>Network</h3>
+              <p>
+                Find organizations and businesses across different sectors and
+                create opportunities for collaboration.
+              </p>
+            </article>
+            <article class="info-card">
+              <div class="icon-circle">G</div>
+              <h3>Grow</h3>
+              <p>
+                Use training, business information, advisory resources, and
+                community programmes to strengthen your enterprise.
+              </p>
+            </article>
+            <article class="info-card">
+              <div class="icon-circle">T</div>
+              <h3>Trade</h3>
+              <p>
+                Discover trade-oriented opportunities and connections that can
+                help businesses participate in wider markets.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h2 class="footer-title">Lagos Chamber of Commerce & Industry</h2>
+            <p>
+              Commerce House, 1 Idowu Taylor Street<br />Victoria Island, Lagos,
+              Nigeria
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Contact</h2>
+            <p>
+              <a href="mailto:info@lagoschamber.com">info@lagoschamber.com</a
+              ><br /><a href="tel:+2349130362431">+234 913 036 2431</a>
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Academic Project</h2>
+            <p>WDD 231 Class Project<br />Samuel Asiabaka</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="copyright-year"></span> LCCI project demonstration. </span
+          ><span id="last-modified"></span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

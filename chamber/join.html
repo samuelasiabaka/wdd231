@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en-NG">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn about LCCI-style membership benefits and submit a membership application in this WDD 231 project."
+    />
+    <meta name="author" content="Samuel C. Asiabaka" />
+    <meta property="og:title" content="Join LCCI" />
+    <meta
+      property="og:description"
+      content="Membership options, benefits, and application form for the LCCI academic project."
+    />
+    <meta property="og:image" content="images/lcci-social.svg" />
+    <meta property="og:url" content="join.html" />
+    <meta property="og:type" content="website" />
+    <title>Join LCCI | Membership</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">LCCI</span
+          ><span class="brand-text"
+            ><strong>Lagos Chamber of Commerce & Industry</strong
+            ><span>Business • Community • Opportunity</span></span
+          ></a
+        ><button
+          class="menu-button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a class="active" href="join.html">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <span class="eyebrow">Membership</span>
+        <h1 class="page-title">Join the business community</h1>
+        <p class="page-intro">
+          Choose the membership level that fits your organization, then submit
+          the application form. The options below follow the assignment's
+          required Non-Profit, Silver, and Gold structure.
+        </p>
+        <section class="section" style="padding-top: 1rem">
+          <div class="membership-grid">
+            <article class="membership-card">
+              <h3>Non-Profit</h3>
+              <div class="price">Community</div>
+              <p>
+                For organizations serving community and social-impact goals.
+              </p>
+              <ul>
+                <li>Directory listing</li>
+                <li>Chamber publications</li>
+                <li>Selected training access</li>
+                <li>Community networking</li>
+              </ul>
+            </article>
+            <article class="membership-card">
+              <h3>Silver</h3>
+              <div class="price">Growth</div>
+              <p>
+                For businesses seeking stronger visibility and professional
+                development.
+              </p>
+              <ul>
+                <li>Everything in Non-Profit</li>
+                <li>Training opportunities</li>
+                <li>Social media features</li>
+                <li>Business luncheons</li>
+                <li>Enhanced directory profile</li>
+              </ul>
+            </article>
+            <article class="membership-card featured">
+              <h3>Gold</h3>
+              <div class="price">Leadership</div>
+              <p>
+                For organizations seeking deeper visibility, connections, and
+                event participation.
+              </p>
+              <ul>
+                <li>Everything in Silver</li>
+                <li>Priority event opportunities</li>
+                <li>Sponsorship opportunities</li>
+                <li>Advertising opportunities</li>
+                <li>Premium visibility</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="section">
+          <div class="form-card">
+            <div id="form-success" class="success-message" role="status"></div>
+            <form id="join-form">
+              <div class="form-grid">
+                <div>
+                  <label for="firstName"
+                    >First Name<input
+                      id="firstName"
+                      name="firstName"
+                      autocomplete="given-name"
+                      required
+                  /></label>
+                </div>
+                <div>
+                  <label for="lastName"
+                    >Last Name<input
+                      id="lastName"
+                      name="lastName"
+                      autocomplete="family-name"
+                      required
+                  /></label>
+                </div>
+                <div>
+                  <label for="title"
+                    >Organizational Title<input
+                      id="title"
+                      name="title"
+                      autocomplete="organization-title"
+                      pattern="[A-Za-zÀ-ÿ .'-]{7,}"
+                      title="Please enter at least 7 alphabetic characters."
+                  /></label>
+                </div>
+                <div>
+                  <label for="email"
+                    >Email<input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="you@example.com"
+                      required
+                  /></label>
+                </div>
+                <div>
+                  <label for="phone"
+                    >Mobile Phone<input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      autocomplete="tel"
+                      required
+                  /></label>
+                </div>
+                <div>
+                  <label for="organization"
+                    >Business / Organization<input
+                      id="organization"
+                      name="organization"
+                      autocomplete="organization"
+                      required
+                  /></label>
+                </div>
+                <div>
+                  <label for="membership"
+                    >Membership Level<select
+                      id="membership"
+                      name="membership"
+                      required
+                    >
+                      <option value="">Select a level</option>
+                      <option>Non-Profit</option>
+                      <option>Silver</option>
+                      <option>Gold</option>
+                    </select></label
+                  >
+                </div>
+                <div class="full">
+                  <label for="description"
+                    >Business Description<textarea
+                      id="description"
+                      name="description"
+                      placeholder="Briefly describe your business or organization."
+                    ></textarea>
+                  </label>
+                </div>
+                <div class="full">
+                  <button class="btn btn-primary" type="submit">
+                    Submit Application
+                  </button>
+                  <p class="form-note">
+                    This form demonstrates client-side form handling for the WDD
+                    231 project; it does not submit payment or create an
+                    official LCCI membership.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h2 class="footer-title">Lagos Chamber of Commerce & Industry</h2>
+            <p>
+              Commerce House, 1 Idowu Taylor Street<br />Victoria Island, Lagos,
+              Nigeria
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Contact</h2>
+            <p>
+              <a href="mailto:info@lagoschamber.com">info@lagoschamber.com</a
+              ><br /><a href="tel:+2349130362431">+234 913 036 2431</a>
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Academic Project</h2>
+            <p>WDD 231 Class Project<br />Samuel Asiabaka</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="copyright-year"></span> LCCI project demonstration. </span
+          ><span id="last-modified"></span>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>
