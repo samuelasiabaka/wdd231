@@ -3,7 +3,7 @@
   --primary-green-dark: #144a18;
   --light-green: #e8f5e9;
   --accent-amber: #ff8f00;
-  --accent-amber-dark: #e65100;
+  --accent-amber-dark: #8a3f00;
   --bg-white: #fafafa;
   --bg-card: #ffffff;
   --text-dark: #212121;
@@ -155,7 +155,7 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.button {
+.btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -168,20 +168,20 @@ main {
   font-weight: 800;
   transition: var(--transition);
 }
-.button-primary {
+.btn-primary {
   background: var(--primary-green);
   color: white;
 }
-.button-primary:hover {
+.btn-primary:hover {
   background: var(--primary-green-dark);
   transform: translateY(-1px);
 }
-.button-secondary {
+.btn-secondary {
   background: white;
   color: var(--primary-green-dark);
   border-color: var(--primary-green);
 }
-.button-secondary:hover {
+.btn-secondary:hover {
   background: var(--light-green);
 }
 
@@ -319,7 +319,7 @@ main {
 }
 .footer-grid p,
 .footer-grid a {
-  color: #e8f5e9;
+  color: #fff;
   font-size: 0.9rem;
 }
 .footer-grid a:hover {
@@ -344,13 +344,14 @@ main {
   padding: 3rem 0;
 }
 .hero h1 {
+  color: #fff;
   font-family: var(--font-heading);
   font-size: clamp(2rem, 9vw, 4.2rem);
   line-height: 1.08;
   margin-bottom: 1rem;
 }
 .hero p {
-  color: #e8f5e9;
+  color: #fff;
   max-width: 680px;
   font-size: 1.05rem;
   margin-bottom: 1.4rem;
@@ -367,8 +368,8 @@ main {
   margin-top: 2rem;
 }
 .stat {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: var(--primary-green-dark);
+  border: 1px solid rgba(255, 255, 255, 0.35);
   padding: 0.8rem;
   border-radius: var(--radius);
 }
@@ -388,6 +389,11 @@ main {
   color: var(--primary-green-dark);
   font-size: 1.7rem;
 }
+
+#network-section {
+  background: var(--light-green);
+}
+
 .cards-2,
 .cards-3 {
   display: grid;
