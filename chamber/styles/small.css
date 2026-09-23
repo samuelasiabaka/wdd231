@@ -334,11 +334,7 @@ main {
 }
 
 .hero {
-  background: linear-gradient(
-    135deg,
-    var(--primary-green-dark),
-    var(--primary-green)
-  );
+  background: var(--primary-green-dark);
   color: white;
   border-radius: 0 0 28px 28px;
   padding: 3rem 0;
