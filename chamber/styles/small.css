@@ -333,6 +333,10 @@ main {
   color: #c8e6c9;
 }
 
+.hero .eyebrow {
+  color: #c8e6c9;
+}
+
 .hero {
   background: var(--primary-green-dark);
   color: white;
