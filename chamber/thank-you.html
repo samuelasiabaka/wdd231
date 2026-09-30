@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-NG">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Thank you for submitting a membership application for the LCCI WDD 231 project."
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <meta
+      property="og:title"
+      content="Membership Application Received | LCCI"
+    />
+    <meta
+      property="og:description"
+      content="Confirmation of a membership application for the LCCI WDD 231 project."
+    />
+    <meta
+      property="og:image"
+      content="https://samuelasiabaka.github.io/wdd231/chamber/images/lcci-social.svg"
+    />
+    <meta
+      property="og:url"
+      content="https://samuelasiabaka.github.io/wdd231/chamber/thank-you.html"
+    />
+    <meta property="og:type" content="website" />
+    <title>Application Received | LCCI</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/thank-you.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">LCCI</span>
+          <span class="brand-text"
+            ><strong>Lagos Chamber of Commerce &amp; Industry</strong
+            ><span>Business • Community • Opportunity</span></span
+          >
+        </a>
+        <button
+          class="menu-button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a class="active" href="join.html">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="container">
+        <section class="section thankyou-card" aria-labelledby="thankyou-title">
+          <span class="eyebrow">Application Received</span>
+          <h1 id="thankyou-title" class="page-title">
+            Thank you for your application
+          </h1>
+          <p class="page-intro">
+            Your membership application has been received for this WDD 231
+            project demonstration. Here is the information submitted.
+          </p>
+          <div
+            id="submission-details"
+            class="submission-details"
+            aria-live="polite"
+          ></div>
+          <a class="btn btn-primary" href="join.html"
+            >Return to Membership Page</a
+          >
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h2 class="footer-title">Lagos Chamber of Commerce & Industry</h2>
+            <p>
+              Commerce House, 1 Idowu Taylor Street<br />Victoria Island, Lagos,
+              Nigeria
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Contact</h2>
+            <p>
+              <a href="mailto:info@lagoschamber.com">info@lagoschamber.com</a
+              ><br /><a href="tel:+2349130362431">+234 913 036 2431</a>
+            </p>
+          </div>
+          <div>
+            <h2 class="footer-title">Academic Project</h2>
+            <p>WDD 231 Class Project<br />Samuel Asiabaka</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="copyright-year"></span> LCCI project demonstration. </span
+          ><span id="last-modified"></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

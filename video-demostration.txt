@@ -1,0 +1,15 @@
+Video Specifications Requirements
+What to Capture: Use your camera showing your face as you record your screen.
+Length: Record a 3-5 minute video. Focus on the required demonstrations and nothing else.
+Location: Upload your completed video to Youtube, Loom, or an equivalent service. Make sure the video is public so that the graders can view it.
+Recording Tools: Use the video capture and editing tool of your choice.
+Some video recording tools that include free options are:
+ClipChamp
+Screencastify
+Loom
+OBS Studio
+QuickTime Player (macOS)
+Link your video in the footer of each page of your site so it can be easily found by the grading team.
+Video Content Requirements
+How you used your API/Data integration and demonstrate the output.
+How you used an asynchronous functionality with a try block.
