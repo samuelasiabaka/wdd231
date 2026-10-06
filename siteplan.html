@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      WDD231 Site Plan | Nigeria Demographics Explorer | Samuel Asiabaka
+    </title>
+    <meta
+      name="description"
+      content="Site plan document for the Nigeria Demographics Explorer project, WDD231 Final Project by Samuel Asiabaka"
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/siteplan.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Nigeria Demographics Explorer</h1>
+        <p class="subtitle">Site Planning Document - WDD231 Final Project</p>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Site plan navigation">
+      <div class="container">
+        <a href="#site-name">Site Name</a>
+        <a href="#site-purpose">Purpose</a>
+        <a href="#scenarios">Scenarios</a>
+        <a href="#color-scheme">Colors</a>
+        <a href="#typography">Typography</a>
+        <a href="#wireframes">Wireframes</a>
+        <a href="#technical">Technical Plan</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="site-name">
+        <h2>Site Name</h2>
+        <h3>Nigeria Demographics Explorer</h3>
+        <p>
+          This name was chosen because it clearly communicates the website's
+          focus: an interactive, educational tool for exploring Nigeria's
+          population, ethnic diversity, languages, and state-level demographic
+          data. The word "Explorer" signals that the site is interactive and
+          user-driven rather than a static information page.
+        </p>
+        <p>
+          <strong>Optional domain:</strong>
+          <code>nigeria-demographics.org</code>
+        </p>
+      </section>
+
+      <section id="site-purpose">
+        <h2>Site Purpose</h2>
+        <p>
+          The Nigeria Demographics Explorer serves as an interactive educational
+          hub that makes Nigeria's demographic data accessible, engaging, and
+          easy to understand. The site provides:
+        </p>
+        <ul>
+          <li>
+            <strong>Key Statistics:</strong> Animated stat cards displaying
+            Nigeria's population, major ethnic groups, official languages, and
+            age distribution on the home page.
+          </li>
+          <li>
+            <strong>State Explorer:</strong> A searchable, filterable database
+            of all 36 states and the FCT with population estimates, dominant
+            languages, and ethnic composition.
+          </li>
+          <li>
+            <strong>Quiz Challenge:</strong> An interactive multiple-choice quiz
+            that tests users' knowledge of Nigerian demographics with scoring
+            and a local leaderboard.
+          </li>
+          <li>
+            <strong>Compare States:</strong> A side-by-side comparison tool for
+            analyzing demographic differences between selected states.
+          </li>
+          <li>
+            <strong>Feedback Form:</strong> A standards-compliant HTML form for
+            users to submit corrections, suggestions, or additional data.
+          </li>
+        </ul>
+        <p>
+          The site targets students, researchers, educators, and anyone curious
+          about Nigeria's place as Africa's most populous nation.
+        </p>
+      </section>
+
+      <section id="scenarios">
+        <h2>Scenarios</h2>
+
+        <div class="scenario-box">
+          <strong>Scenario 1 - The Student Researcher</strong>
+          "I am writing a paper on ethnic diversity in West Africa. Which
+          Nigerian states have the highest population, and what are the dominant
+          languages and ethnic groups in each? Can I filter and compare states
+          side by side?"
+        </div>
+
+        <div class="scenario-box">
+          <strong>Scenario 2 - The Curious Visitor</strong>
+          "I want to test my knowledge about Nigeria. Is there a fun way to
+          learn demographic facts through a quiz? Can I save my score and try to
+          beat it later?"
+        </div>
+
+        <div class="scenario-box">
+          <strong>Scenario 3 - The Educator</strong>
+          "I need a reliable, visually clear source of Nigeria's demographic
+          data to share with my class. Does this site work well on a projector
+          and on students' phones? Is the information accurate and properly
+          cited?"
+        </div>
+
+        <div class="scenario-box">
+          <strong>Scenario 4 - The Data Enthusiast</strong>
+          "I want to see visual representations of Nigeria's demographic data.
+          Are there charts or graphs showing population distribution by region
+          or language prevalence?"
+        </div>
+      </section>
+
+      <section id="color-scheme">
+        <h2>Color Schema</h2>
+        <p>
+          The palette draws from Nigeria's national identity - green from the
+          flag representing agriculture and natural wealth, paired with a warm
+          amber accent for energy and visibility. High contrast ensures
+          accessibility.
+        </p>
+
+        <div class="color-swatch">
+          <div class="swatch-box swatch-box-one"></div>
+          <div class="swatch-info">
+            <strong>Deep Forest Green - #1B5E20</strong>
+            <span
+              >Primary brand color. Used for headings, navigation background,
+              footer, section titles, and primary buttons.</span
+            >
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="swatch-box swatch-box-two"></div>
+          <div class="swatch-info">
+            <strong>Amber Accent - #FF8F00</strong>
+            <span
+              >Accent and call-to-action color. Used for buttons, links,
+              borders, highlights, quiz score badges, and interactive element
+              hover states.</span
+            >
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="swatch-box swatch-box-three"></div>
+          <div class="swatch-info">
+            <strong>Light Mint - #E8F5E9</strong>
+            <span
+              >Secondary background for cards, info boxes, and subtle section
+              differentiation. Provides visual rest between content
+              blocks.</span
+            >
+          </div>
+        </div>
+
+        <div class="color-swatch">
+          <div class="swatch-box swatch-box-four"></div>
+          <div class="swatch-info">
+            <strong>Charcoal - #212121</strong>
+            <span
+              >Primary text color for body copy and paragraphs. Ensures strong
+              readability against light backgrounds.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="typography">
+        <h2>Typography</h2>
+        <p>
+          Two complementary typefaces were selected to balance authority (serif
+          headings) with readability (sans-serif body). Both are available via
+          Google Fonts.
+        </p>
+
+        <div class="typo-sample">
+          <div class="label">Headings - Merriweather, Serif</div>
+          <h1 class="heading-sample">Nigeria At A Glance</h1>
+          <p class="sample-description">
+            Used for all page titles, section headings (h1-h3), navigation
+            labels, and quiz question text. Weight: 700-900.
+          </p>
+        </div>
+
+        <div class="typo-sample">
+          <div class="label">Body & UI - Open Sans, Sans-Serif</div>
+          <p class="body-sample">
+            Nigeria is home to over 220 million people, making it the most
+            populous country in Africa and the sixth most populous in the world.
+          </p>
+          <p class="sample-description">
+            Used for all body paragraphs, list items, form labels, button text,
+            captions, and footer content. Weight: 400-700.
+          </p>
+        </div>
+      </section>
+
+      <section id="wireframes">
+        <h2>Wireframes</h2>
+        <p>
+          Below are the planned layouts for the <strong>Home Page</strong> in
+          mobile (portrait) and desktop (wider) views. All other pages will
+          share the same header, navigation, and footer structure for
+          consistency.
+        </p>
+
+        <div class="wireframe-container">
+          <div class="wireframe-card">
+            <h4>Mobile View (Portrait)</h4>
+            <svg class="svg" viewBox="0 0 300 520" width="100%">
+              <!-- Phone frame -->
+              <rect
+                x="10"
+                y="10"
+                width="280"
+                height="500"
+                rx="20"
+                fill="none"
+                stroke="#999"
+                stroke-width="2"
+              />
+
+              <rect
+                x="20"
+                y="30"
+                width="260"
+                height="40"
+                fill="var(--primary-green)"
+              />
+              <text
+                x="150"
+                y="55"
+                text-anchor="middle"
+                fill="white"
+                font-size="12"
+                font-family="Merriweather, serif"
+              >
+                Logo + Hamburger
+              </text>
+
+              <rect
+                x="20"
+                y="80"
+                width="260"
+                height="100"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="150"
+                y="135"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="11"
+                font-family="Open Sans, sans-serif"
+              >
+                Hero Image (Lazy Load)
+              </text>
+
+              <!-- Hero Text -->
+              <rect x="20" y="190" width="260" height="50" fill="none" />
+              <text
+                x="150"
+                y="210"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="13"
+                font-weight="bold"
+                font-family="Merriweather, serif"
+              >
+                Discover Nigeria's Diversity
+              </text>
+              <text
+                x="150"
+                y="228"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="10"
+              >
+                Explore demographics of Africa's
+              </text>
+              <text
+                x="150"
+                y="240"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="10"
+              >
+                most populous nation
+              </text>
+
+              <rect
+                x="20"
+                y="250"
+                width="125"
+                height="35"
+                rx="5"
+                fill="var(--accent-amber)"
+              />
+              <text
+                x="82"
+                y="272"
+                text-anchor="middle"
+                fill="white"
+                font-size="11"
+                font-weight="bold"
+              >
+                Explore States
+              </text>
+
+              <rect
+                x="155"
+                y="250"
+                width="125"
+                height="35"
+                rx="5"
+                fill="none"
+                stroke="var(--primary-green)"
+                stroke-width="2"
+              />
+              <text
+                x="217"
+                y="272"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="11"
+                font-weight="bold"
+              >
+                Take the Quiz
+              </text>
+
+              <!-- Stats Cards -->
+              <rect
+                x="20"
+                y="300"
+                width="125"
+                height="70"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="82"
+                y="325"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="14"
+                font-weight="bold"
+              >
+                230M+
+              </text>
+              <text
+                x="82"
+                y="345"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                Population
+              </text>
+
+              <rect
+                x="155"
+                y="300"
+                width="125"
+                height="70"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="217"
+                y="325"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="14"
+                font-weight="bold"
+              >
+                37
+              </text>
+              <text
+                x="217"
+                y="345"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                States & FCT
+              </text>
+
+              <rect
+                x="20"
+                y="380"
+                width="125"
+                height="70"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="82"
+                y="405"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="14"
+                font-weight="bold"
+              >
+                500+
+              </text>
+              <text
+                x="82"
+                y="425"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                Languages
+              </text>
+
+              <rect
+                x="155"
+                y="380"
+                width="125"
+                height="70"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="217"
+                y="405"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="14"
+                font-weight="bold"
+              >
+                250+
+              </text>
+              <text
+                x="217"
+                y="425"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                Ethnic Groups
+              </text>
+
+              <!-- Footer -->
+              <rect
+                x="20"
+                y="470"
+                width="260"
+                height="30"
+                fill="var(--primary-green)"
+              />
+              <text
+                x="150"
+                y="490"
+                text-anchor="middle"
+                fill="white"
+                font-size="10"
+              >
+                Footer & Copyright
+              </text>
+            </svg>
+          </div>
+
+          <!-- Desktop Wireframe -->
+          <div class="wireframe-card">
+            <h4>Desktop View (Wide)</h4>
+            <svg class="svg-two" viewBox="0 0 500 400" width="100%">
+              <!-- Browser frame -->
+              <rect
+                x="10"
+                y="10"
+                width="480"
+                height="380"
+                rx="8"
+                fill="none"
+                stroke="#999"
+                stroke-width="2"
+              />
+
+              <!-- Header / Nav -->
+              <rect
+                x="20"
+                y="25"
+                width="460"
+                height="45"
+                fill="var(--primary-green)"
+              />
+              <text
+                x="40"
+                y="52"
+                fill="white"
+                font-size="12"
+                font-weight="bold"
+                font-family="Merriweather, serif"
+              >
+                Logo
+              </text>
+              <text x="320" y="52" fill="white" font-size="11">
+                Home | Explore | Quiz | Compare | Contact
+              </text>
+
+              <!-- Hero Section -->
+              <rect
+                x="20"
+                y="80"
+                width="460"
+                height="120"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="250"
+                y="115"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="16"
+                font-weight="bold"
+                font-family="Merriweather, serif"
+              >
+                Discover Nigeria's Diversity
+              </text>
+              <text
+                x="250"
+                y="135"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="11"
+              >
+                Explore the demographics of Africa's most populous nation
+              </text>
+              <text
+                x="250"
+                y="150"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="11"
+              >
+                From ethnic groups to state populations, uncover the data
+              </text>
+
+              <!-- CTA Buttons -->
+              <rect
+                x="150"
+                y="160"
+                width="100"
+                height="30"
+                rx="5"
+                fill="var(--accent-amber)"
+              />
+              <text
+                x="200"
+                y="180"
+                text-anchor="middle"
+                fill="white"
+                font-size="10"
+                font-weight="bold"
+              >
+                Explore States
+              </text>
+
+              <rect
+                x="260"
+                y="160"
+                width="100"
+                height="30"
+                rx="5"
+                fill="none"
+                stroke="var(--primary-green)"
+                stroke-width="2"
+              />
+              <text
+                x="310"
+                y="180"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="10"
+                font-weight="bold"
+              >
+                Take the Quiz
+              </text>
+
+              <!-- Stats Cards Row -->
+              <rect
+                x="20"
+                y="215"
+                width="105"
+                height="80"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="72"
+                y="245"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="16"
+                font-weight="bold"
+              >
+                230M+
+              </text>
+              <text
+                x="72"
+                y="265"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                Population
+              </text>
+
+              <rect
+                x="135"
+                y="215"
+                width="105"
+                height="80"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="187"
+                y="245"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="16"
+                font-weight="bold"
+              >
+                37
+              </text>
+              <text
+                x="187"
+                y="265"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                States & FCT
+              </text>
+
+              <rect
+                x="250"
+                y="215"
+                width="105"
+                height="80"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="302"
+                y="245"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="16"
+                font-weight="bold"
+              >
+                500+
+              </text>
+              <text
+                x="302"
+                y="265"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                Languages
+              </text>
+
+              <rect
+                x="365"
+                y="215"
+                width="105"
+                height="80"
+                fill="var(--light-green)"
+                stroke="#ccc"
+                stroke-width="1"
+              />
+              <text
+                x="417"
+                y="245"
+                text-anchor="middle"
+                fill="var(--primary-green)"
+                font-size="16"
+                font-weight="bold"
+              >
+                250+
+              </text>
+              <text
+                x="417"
+                y="265"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="9"
+              >
+                Ethnic Groups
+              </text>
+
+              <!-- Content Section -->
+              <rect
+                x="20"
+                y="310"
+                width="460"
+                height="50"
+                fill="none"
+                stroke="#ccc"
+                stroke-width="1"
+                stroke-dasharray="5,5"
+              />
+              <text
+                x="250"
+                y="330"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="10"
+              >
+                About Section / Features Grid
+              </text>
+              <text
+                x="250"
+                y="345"
+                text-anchor="middle"
+                fill="var(--text-medium)"
+                font-size="10"
+              >
+                (Why Nigeria's Demographics Matter)
+              </text>
+
+              <!-- Footer -->
+              <rect
+                x="20"
+                y="370"
+                width="460"
+                height="25"
+                fill="var(--primary-green)"
+              />
+              <text
+                x="250"
+                y="387"
+                text-anchor="middle"
+                fill="white"
+                font-size="10"
+              >
+                Footer & Copyright
+              </text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Implementation Plan -->
+      <section id="technical">
+        <h2>Technical Implementation Plan</h2>
+        <p>
+          This section outlines the technical architecture and key features that
+          will be implemented to meet WDD231 project requirements.
+        </p>
+
+        <h3>Data Architecture</h3>
+        <ul>
+          <li>
+            <strong>External JSON Data:</strong> State demographic data will be
+            stored in a separate <code>data/states.json</code> file
+          </li>
+          <li>
+            <strong>Fetch API:</strong> Asynchronous data retrieval using
+            <code>fetch()</code> with <code>try...catch</code> error handling
+          </li>
+          <li>
+            <strong>15+ Items:</strong> 37 states and FCT, each with 7+ data
+            properties (name, capital, region, population, area, ethnic groups,
+            languages)
+          </li>
+        </ul>
+
+        <h3>JavaScript Features</h3>
+        <ul>
+          <li>
+            <strong>ES Modules:</strong> Code organized into modular files with
+            import/export statements
+          </li>
+          <li>
+            <strong>Array Methods:</strong> Using <code>map()</code>,
+            <code>filter()</code>, and <code>forEach()</code> for data
+            processing
+          </li>
+          <li>
+            <strong>Template Literals:</strong> Dynamic HTML generation with
+            template strings
+          </li>
+          <li>
+            <strong>Local Storage:</strong> Persisting quiz scores, user
+            preferences, and favorites
+          </li>
+          <li>
+            <strong>Modal Dialogs:</strong> Accessible modal using the native
+            <code>&lt;dialog&gt;</code> element
+          </li>
+        </ul>
+
+        <h3>Page Structure</h3>
+        <ul>
+          <li>
+            <strong>index.html:</strong> Landing page with animated statistics
+            and overview
+          </li>
+          <li>
+            <strong>explore.html:</strong> Interactive state explorer with
+            search, filter, and sort
+          </li>
+          <li><strong>quiz.html:</strong> Interactive quiz with leaderboard</li>
+          <li>
+            <strong>compare.html:</strong> Side-by-side state comparison tool
+          </li>
+          <li>
+            <strong>form.html:</strong> User feedback form (with form action
+            page)
+          </li>
+        </ul>
+
+        <h3>CSS Features</h3>
+        <ul>
+          <li>
+            <strong>CSS Animations:</strong> Keyframe animations for stat
+            counters, card entrances, and modal transitions
+          </li>
+          <li>
+            <strong>CSS Grid & Flexbox:</strong> Responsive layouts for all
+            screen sizes
+          </li>
+          <li>
+            <strong>CSS Custom Properties:</strong> Consistent theming with CSS
+            variables
+          </li>
+          <li>
+            <strong>Responsive Design:</strong> Mobile-first approach (320px+)
+            with no horizontal scrolling
+          </li>
+        </ul>
+
+        <h3>Accessibility & Performance</h3>
+        <ul>
+          <li>
+            <strong>Semantic HTML:</strong> Proper use of header, nav, main,
+            section, article, and footer
+          </li>
+          <li>
+            <strong>ARIA Labels:</strong> Screen reader support for interactive
+            elements
+          </li>
+          <li>
+            <strong>Lazy Loading:</strong> Images use
+            <code>loading="lazy"</code>
+            attribute
+          </li>
+          <li>
+            <strong>Optimized Assets:</strong> All images optimized, page weight
+            under 500KB
+          </li>
+          <li>
+            <strong>Favicon:</strong> Custom favicon matching site branding
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Samuel Asiabaka | WDD231 Final Project Site Plan</p>
+    </footer>
+  </body>
+</html>
