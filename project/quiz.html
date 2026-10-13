@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nigeria Demographics Quiz | Nigeria Demographics Explorer</title>
+    <meta
+      name="description"
+      content="Test your knowledge of Nigeria's states, geopolitical zones, languages, and cultural diversity with an interactive quiz."
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <meta name="theme-color" content="#14532d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Nigeria Demographics Quiz | Nigeria Demographics Explorer"
+    />
+    <meta
+      property="og:description"
+      content="Test your knowledge of Nigeria's states, geopolitical zones, languages, and cultural diversity with an interactive quiz."
+    />
+    <meta property="og:image" content="favicon.svg" />
+    <meta property="og:site_name" content="Nigeria Demographics Explorer" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="scripts/quiz.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">NG</span
+          ><span>Nigeria Demographics Explorer</span></a
+        ><button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation menu"
+        >
+          ☰ Menu
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a href="index.html" data-nav="index">Home</a
+          ><a href="explore.html" data-nav="explore">Explore states</a
+          ><a href="quiz.html" data-nav="quiz">Knowledge quiz</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-heading">
+        <div class="wrap">
+          <span class="eyebrow">Learn as you go</span>
+          <h1>Nigeria knowledge quiz</h1>
+          <p>
+            Answer questions about Nigeria's administrative geography and
+            cultural diversity. Your best score is stored on this device.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap quiz-layout">
+          <article class="panel question-card">
+            <div class="result-line">
+              <span id="questionCount">Question 1 of 8</span
+              ><span>Score: <strong id="score">0</strong></span>
+            </div>
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Quiz progress"
+              aria-valuemin="0"
+              aria-valuemax="8"
+              aria-valuenow="0"
+              id="progress"
+            >
+              <span id="progressBar"></span>
+            </div>
+            <h2 id="questionText">Loading question…</h2>
+            <div id="answers" class="answers"></div>
+            <p id="feedback" class="feedback" aria-live="polite">
+              Choose an answer to see feedback.
+            </p>
+            <div class="form-actions">
+              <button id="nextQuestion" type="button" disabled>
+                Next question →</button
+              ><button id="restartQuiz" class="outline" type="button">
+                Restart quiz
+              </button>
+            </div>
+          </article>
+          <aside class="panel">
+            <h2>Your learning record</h2>
+            <p>Current score: <strong id="sideScore">0</strong></p>
+            <p>Best score on this device: <strong id="bestScore">0</strong></p>
+            <p>
+              Take your time. Each answer includes a short explanation to help
+              you remember the facts.
+            </p>
+            <div class="notice">
+              Tip: visit the state explorer to review the geopolitical zones and
+              state capitals before trying again.
+            </div>
+            <p><a href="explore.html">Open the state explorer →</a></p>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Nigeria Demographics Explorer</strong>
+          <p>Learn about Nigeria's states, people, and cultural diversity.</p>
+          <p>© <span id="year"></span> Nigeria Demographics Explorer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="feedback.html">Feedback</a
+          ><a href="attributions.html">Attributions</a
+          ><a
+            href="https://www.loom.com/share/c71a80b4f23f415fb1861a3dcba4d957"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Video demonstration</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="scripts/common.mjs"></script>
+  </body>
+</html>

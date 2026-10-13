@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Attributions | Nigeria Demographics Explorer</title>
+    <meta
+      name="description"
+      content="Data notes, references, and implementation attributions for the Nigeria Demographics Explorer."
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <meta name="theme-color" content="#14532d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Attributions | Nigeria Demographics Explorer"
+    />
+    <meta
+      property="og:description"
+      content="Data notes, references, and implementation attributions for the Nigeria Demographics Explorer."
+    />
+    <meta property="og:image" content="favicon.svg" />
+    <meta property="og:site_name" content="Nigeria Demographics Explorer" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">NG</span
+          ><span>Nigeria Demographics Explorer</span></a
+        ><button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation menu"
+        >
+          ☰ Menu
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a href="index.html" data-nav="index">Home</a
+          ><a href="explore.html" data-nav="explore">Explore states</a
+          ><a href="quiz.html" data-nav="quiz">Knowledge quiz</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-heading">
+        <div class="wrap">
+          <span class="eyebrow">Transparency</span>
+          <h1>Attributions and data notes</h1>
+          <p>
+            Sources and implementation notes for the Nigeria Demographics
+            Explorer.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <article class="panel">
+            <h2>Data and editorial note</h2>
+            <p>
+              The project includes a local JSON dataset of Nigerian state and
+              FCT records adapted from the data supplied with the original
+              student project. Population and area values should be treated as
+              illustrative estimates, not current official statistics.
+              State-level cultural and language summaries are simplified and are
+              not intended to represent every community.
+            </p>
+            <h2>External references</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://population.gov.ng/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >National Population Commission of Nigeria</a
+                >
+                - consult for official population information and census
+                updates.
+              </li>
+              <li>
+                <a
+                  href="https://www.nigerianstat.gov.ng/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >National Bureau of Statistics</a
+                >
+                - consult for official statistical publications.
+              </li>
+            </ul>
+            <h2>Design and implementation</h2>
+            <p>
+              Original HTML, CSS, and JavaScript were written for this learning
+              project. No third-party CSS frameworks or JavaScript libraries are
+              used. The favicon is an original SVG mark created for the project.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Nigeria Demographics Explorer</strong>
+          <p>Learn about Nigeria's states, people, and cultural diversity.</p>
+          <p>© <span id="year"></span> Nigeria Demographics Explorer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="feedback.html">Feedback</a
+          ><a href="attributions.html">Attributions</a
+          ><a
+            href="https://www.loom.com/share/c71a80b4f23f415fb1861a3dcba4d957"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Video demonstration</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="scripts/common.js"></script>
+  </body>
+</html>

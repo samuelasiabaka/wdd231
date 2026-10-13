@@ -1,0 +1,551 @@
+[
+  {
+    "name": "Abia",
+    "capital": "Umuahia",
+    "region": "South-East",
+    "population": 4841943,
+    "area": 5243,
+    "ethnicGroups": [
+      "Igbo"
+    ],
+    "languages": [
+      "Igbo",
+      "English"
+    ]
+  },
+  {
+    "name": "Adamawa",
+    "capital": "Yola",
+    "region": "North-East",
+    "population": 5236948,
+    "area": 36917,
+    "ethnicGroups": [
+      "Fulani",
+      "Bata",
+      "Bachama"
+    ],
+    "languages": [
+      "Fulfulde",
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Akwa Ibom",
+    "capital": "Uyo",
+    "region": "South-South",
+    "population": 5780581,
+    "area": 7081,
+    "ethnicGroups": [
+      "Ibibio",
+      "Annang"
+    ],
+    "languages": [
+      "Ibibio",
+      "English"
+    ]
+  },
+  {
+    "name": "Anambra",
+    "capital": "Awka",
+    "region": "South-East",
+    "population": 7299910,
+    "area": 4844,
+    "ethnicGroups": [
+      "Igbo"
+    ],
+    "languages": [
+      "Igbo",
+      "English"
+    ]
+  },
+  {
+    "name": "Bauchi",
+    "capital": "Bauchi",
+    "region": "North-East",
+    "population": 7540663,
+    "area": 45893,
+    "ethnicGroups": [
+      "Hausa-Fulani",
+      "Sayawa"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Bayelsa",
+    "capital": "Yenagoa",
+    "region": "South-South",
+    "population": 2394725,
+    "area": 21110,
+    "ethnicGroups": [
+      "Ijaw"
+    ],
+    "languages": [
+      "Ijaw",
+      "English"
+    ]
+  },
+  {
+    "name": "Benue",
+    "capital": "Makurdi",
+    "region": "North-Central",
+    "population": 6687706,
+    "area": 34059,
+    "ethnicGroups": [
+      "Tiv",
+      "Idoma",
+      "Igbo"
+    ],
+    "languages": [
+      "Tiv",
+      "Idoma",
+      "English"
+    ]
+  },
+  {
+    "name": "Borno",
+    "capital": "Maiduguri",
+    "region": "North-East",
+    "population": 6651590,
+    "area": 70898,
+    "ethnicGroups": [
+      "Kanuri",
+      "Shuwa Arab"
+    ],
+    "languages": [
+      "Kanuri",
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Cross River",
+    "capital": "Calabar",
+    "region": "South-South",
+    "population": 4175020,
+    "area": 20156,
+    "ethnicGroups": [
+      "Efik"
+    ],
+    "languages": [
+      "Efik",
+      "English"
+    ]
+  },
+  {
+    "name": "Delta",
+    "capital": "Asaba",
+    "region": "South-South",
+    "population": 6107543,
+    "area": 17698,
+    "ethnicGroups": [
+      "Urhobo",
+      "Itsekiri",
+      "Isoko"
+    ],
+    "languages": [
+      "Urhobo",
+      "English"
+    ]
+  },
+  {
+    "name": "Ebonyi",
+    "capital": "Abakaliki",
+    "region": "South-East",
+    "population": 4007155,
+    "area": 5670,
+    "ethnicGroups": [
+      "Igbo"
+    ],
+    "languages": [
+      "Igbo",
+      "English"
+    ]
+  },
+  {
+    "name": "Edo",
+    "capital": "Benin City",
+    "region": "South-South",
+    "population": 5527810,
+    "area": 17802,
+    "ethnicGroups": [
+      "Edo (Bini)"
+    ],
+    "languages": [
+      "Edo",
+      "English"
+    ]
+  },
+  {
+    "name": "Ekiti",
+    "capital": "Ado-Ekiti",
+    "region": "South-West",
+    "population": 3398177,
+    "area": 6353,
+    "ethnicGroups": [
+      "Yoruba"
+    ],
+    "languages": [
+      "Yoruba",
+      "English"
+    ]
+  },
+  {
+    "name": "Enugu",
+    "capital": "Enugu",
+    "region": "South-East",
+    "population": 5396098,
+    "area": 7161,
+    "ethnicGroups": [
+      "Igbo"
+    ],
+    "languages": [
+      "Igbo",
+      "English"
+    ]
+  },
+  {
+    "name": "FCT (Abuja)",
+    "capital": "Abuja",
+    "region": "North-Central",
+    "population": 4802443,
+    "area": 7315,
+    "ethnicGroups": [
+      "Mixed"
+    ],
+    "languages": [
+      "English",
+      "Hausa"
+    ]
+  },
+  {
+    "name": "Gombe",
+    "capital": "Gombe",
+    "region": "North-East",
+    "population": 4623462,
+    "area": 20265,
+    "ethnicGroups": [
+      "Fulani",
+      "Tangale"
+    ],
+    "languages": [
+      "Fulfulde",
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Imo",
+    "capital": "Owerri",
+    "region": "South-East",
+    "population": 6067722,
+    "area": 5530,
+    "ethnicGroups": [
+      "Igbo"
+    ],
+    "languages": [
+      "Igbo",
+      "English"
+    ]
+  },
+  {
+    "name": "Jigawa",
+    "capital": "Dutse",
+    "region": "North-West",
+    "population": 6979080,
+    "area": 23154,
+    "ethnicGroups": [
+      "Hausa-Fulani"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Kaduna",
+    "capital": "Kaduna",
+    "region": "North-West",
+    "population": 8324285,
+    "area": 46053,
+    "ethnicGroups": [
+      "Hausa-Fulani",
+      "Gbagyi"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Kano",
+    "capital": "Kano",
+    "region": "North-West",
+    "population": 16253549,
+    "area": 20131,
+    "ethnicGroups": [
+      "Hausa-Fulani"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Katsina",
+    "capital": "Katsina",
+    "region": "North-West",
+    "population": 9300382,
+    "area": 24192,
+    "ethnicGroups": [
+      "Hausa-Fulani"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Kebbi",
+    "capital": "Birnin Kebbi",
+    "region": "North-West",
+    "population": 6001610,
+    "area": 36800,
+    "ethnicGroups": [
+      "Hausa-Fulani"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Kogi",
+    "capital": "Lokoja",
+    "region": "North-Central",
+    "population": 5053734,
+    "area": 29833,
+    "ethnicGroups": [
+      "Igala",
+      "Ebira",
+      "Okun"
+    ],
+    "languages": [
+      "Igala",
+      "English"
+    ]
+  },
+  {
+    "name": "Kwara",
+    "capital": "Ilorin",
+    "region": "North-Central",
+    "population": 4259613,
+    "area": 36825,
+    "ethnicGroups": [
+      "Yoruba",
+      "Nupe"
+    ],
+    "languages": [
+      "Yoruba",
+      "English"
+    ]
+  },
+  {
+    "name": "Lagos",
+    "capital": "Ikeja",
+    "region": "South-West",
+    "population": 15772884,
+    "area": 3345,
+    "ethnicGroups": [
+      "Yoruba"
+    ],
+    "languages": [
+      "Yoruba",
+      "English"
+    ]
+  },
+  {
+    "name": "Nasarawa",
+    "capital": "Lafia",
+    "region": "North-Central",
+    "population": 3632239,
+    "area": 27110,
+    "ethnicGroups": [
+      "Eggon",
+      "Mada",
+      "Hausa"
+    ],
+    "languages": [
+      "English",
+      "Hausa"
+    ]
+  },
+  {
+    "name": "Niger",
+    "capital": "Minna",
+    "region": "North-Central",
+    "population": 6720617,
+    "area": 76363,
+    "ethnicGroups": [
+      "Nupe",
+      "Gbagyi",
+      "Hausa"
+    ],
+    "languages": [
+      "Nupe",
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Ogun",
+    "capital": "Abeokuta",
+    "region": "South-West",
+    "population": 6445275,
+    "area": 16762,
+    "ethnicGroups": [
+      "Yoruba"
+    ],
+    "languages": [
+      "Yoruba",
+      "English"
+    ]
+  },
+  {
+    "name": "Ondo",
+    "capital": "Akure",
+    "region": "South-West",
+    "population": 5469707,
+    "area": 15500,
+    "ethnicGroups": [
+      "Yoruba"
+    ],
+    "languages": [
+      "Yoruba",
+      "English"
+    ]
+  },
+  {
+    "name": "Osun",
+    "capital": "Oshogbo",
+    "region": "South-West",
+    "population": 4237396,
+    "area": 14875,
+    "ethnicGroups": [
+      "Yoruba"
+    ],
+    "languages": [
+      "Yoruba",
+      "English"
+    ]
+  },
+  {
+    "name": "Oyo",
+    "capital": "Ibadan",
+    "region": "South-West",
+    "population": 7512855,
+    "area": 28454,
+    "ethnicGroups": [
+      "Yoruba"
+    ],
+    "languages": [
+      "Yoruba",
+      "English"
+    ]
+  },
+  {
+    "name": "Plateau",
+    "capital": "Jos",
+    "region": "North-Central",
+    "population": 5400974,
+    "area": 30913,
+    "ethnicGroups": [
+      "Berom",
+      "Hausa",
+      "Ngas"
+    ],
+    "languages": [
+      "English",
+      "Hausa"
+    ]
+  },
+  {
+    "name": "Rivers",
+    "capital": "Port Harcourt",
+    "region": "South-South",
+    "population": 7234973,
+    "area": 11077,
+    "ethnicGroups": [
+      "Ikwerre",
+      "Ogoni",
+      "Ekpeye"
+    ],
+    "languages": [
+      "Ikwerre",
+      "English"
+    ]
+  },
+  {
+    "name": "Sokoto",
+    "capital": "Sokoto",
+    "region": "North-West",
+    "population": 6163187,
+    "area": 25973,
+    "ethnicGroups": [
+      "Hausa-Fulani"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Taraba",
+    "capital": "Jalingo",
+    "region": "North-East",
+    "population": 4331885,
+    "area": 54473,
+    "ethnicGroups": [
+      "Jukun",
+      "Tiv",
+      "Fulani"
+    ],
+    "languages": [
+      "English",
+      "Hausa"
+    ]
+  },
+  {
+    "name": "Yobe",
+    "capital": "Damaturu",
+    "region": "North-East",
+    "population": 4350401,
+    "area": 45502,
+    "ethnicGroups": [
+      "Kanuri",
+      "Hausa"
+    ],
+    "languages": [
+      "Kanuri",
+      "Hausa",
+      "English"
+    ]
+  },
+  {
+    "name": "Zamfara",
+    "capital": "Gusau",
+    "region": "North-West",
+    "population": 5517793,
+    "area": 39762,
+    "ethnicGroups": [
+      "Hausa-Fulani"
+    ],
+    "languages": [
+      "Hausa",
+      "English"
+    ]
+  }
+]

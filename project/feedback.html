@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Share Feedback | Nigeria Demographics Explorer</title>
+    <meta
+      name="description"
+      content="Share a correction or suggestion about the Nigeria Demographics Explorer."
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <meta name="theme-color" content="#14532d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Share Feedback | Nigeria Demographics Explorer"
+    />
+    <meta
+      property="og:description"
+      content="Share a correction or suggestion about the Nigeria Demographics Explorer."
+    />
+    <meta property="og:image" content="favicon.svg" />
+    <meta property="og:site_name" content="Nigeria Demographics Explorer" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">NG</span
+          ><span>Nigeria Demographics Explorer</span></a
+        ><button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation menu"
+        >
+          ☰ Menu
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a href="index.html" data-nav="index">Home</a
+          ><a href="explore.html" data-nav="explore">Explore states</a
+          ><a href="quiz.html" data-nav="quiz">Knowledge quiz</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-heading">
+        <div class="wrap">
+          <span class="eyebrow">Get in touch</span>
+          <h1>Share feedback</h1>
+          <p>
+            Send a question or suggest a correction to improve this learning
+            resource.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="form-card panel">
+            <form action="thankyou.html" method="get">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Full name</label
+                  ><input
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    required
+                    maxlength="80"
+                  />
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label
+                  ><input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+                <div class="field span-2">
+                  <label for="topic">Feedback topic</label
+                  ><select id="topic" name="topic" required>
+                    <option value="">Choose a topic</option>
+                    <option>Data correction</option>
+                    <option>Accessibility</option>
+                    <option>Website suggestion</option>
+                    <option>General question</option>
+                  </select>
+                </div>
+                <div class="field span-2">
+                  <label for="message">Message</label
+                  ><textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    maxlength="1000"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button type="submit">Submit feedback</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Nigeria Demographics Explorer</strong>
+          <p>Learn about Nigeria's states, people, and cultural diversity.</p>
+          <p>© <span id="year"></span> Nigeria Demographics Explorer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="feedback.html">Feedback</a
+          ><a href="attributions.html">Attributions</a
+          ><a
+            href="https://www.loom.com/share/c71a80b4f23f415fb1861a3dcba4d957"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Video demonstration</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="scripts/common.mjs"></script>
+  </body>
+</html>

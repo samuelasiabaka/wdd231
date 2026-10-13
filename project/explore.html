@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Explore Nigerian States | Nigeria Demographics Explorer</title>
+    <meta
+      name="description"
+      content="Search and compare Nigeria's states and FCT by capital, geopolitical zone, population estimate, area, ethnic communities, and languages."
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <meta name="theme-color" content="#14532d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Explore Nigerian States | Nigeria Demographics Explorer"
+    />
+    <meta
+      property="og:description"
+      content="Search and compare Nigeria's states and FCT by capital, geopolitical zone, population estimate, area, ethnic communities, and languages."
+    />
+    <meta property="og:image" content="favicon.svg" />
+    <meta property="og:site_name" content="Nigeria Demographics Explorer" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="scripts/explore.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">NG</span
+          ><span>Nigeria Demographics Explorer</span></a
+        ><button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation menu"
+        >
+          ☰ Menu
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a href="index.html" data-nav="index">Home</a
+          ><a href="explore.html" data-nav="explore">Explore states</a
+          ><a href="quiz.html" data-nav="quiz">Knowledge quiz</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-heading">
+        <div class="wrap">
+          <span class="eyebrow">Browse the directory</span>
+          <h1>Explore Nigeria's states</h1>
+          <p>
+            Search, filter, sort, and save entries. Open any state card for a
+            more detailed view.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="toolbar" role="search">
+            <div class="field">
+              <label for="searchInput">Search states and details</label
+              ><input
+                id="searchInput"
+                type="search"
+                placeholder="Try Lagos, Hausa, or Abuja"
+                autocomplete="off"
+              />
+            </div>
+            <div class="field">
+              <label for="regionFilter">Geopolitical zone</label
+              ><select id="regionFilter">
+                <option value="">All zones</option>
+                <option>North-Central</option>
+                <option>North-East</option>
+                <option>North-West</option>
+                <option>South-East</option>
+                <option>South-South</option>
+                <option>South-West</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="sortSelect">Sort results</label
+              ><select id="sortSelect">
+                <option value="name-asc">Name A-Z</option>
+                <option value="name-desc">Name Z-A</option>
+                <option value="pop-desc">Population: high to low</option>
+                <option value="pop-asc">Population: low to high</option>
+                <option value="area-desc">Area: largest first</option>
+              </select>
+            </div>
+          </div>
+          <div class="result-line">
+            <span id="resultCount" aria-live="polite">Loading state data…</span
+            ><button id="clearFilters" class="outline" type="button">
+              Clear filters
+            </button>
+          </div>
+          <div id="stateGrid" class="state-grid" aria-live="polite">
+            <p class="empty">Loading state records…</p>
+          </div>
+          <section class="panel" id="favorites">
+            <div class="section-head">
+              <div>
+                <h2>Saved states</h2>
+                <p>Favourites are saved only in this browser.</p>
+              </div>
+              <button id="clearFavorites" class="outline" type="button">
+                Clear saved states
+              </button>
+            </div>
+            <div id="favoritesList" class="favorites-list">
+              <p>No saved states yet.</p>
+            </div>
+          </section>
+          <p class="data-source">
+            Population and land-area values are illustrative estimates in the
+            supplied project dataset; verify against official sources before
+            using them for research or policy decisions.
+          </p>
+        </div>
+      </section>
+      <dialog class="modal" id="stateDialog" aria-labelledby="dialogTitle">
+        <div class="modal-inner">
+          <button
+            class="modal-close"
+            id="closeDialog"
+            type="button"
+            aria-label="Close state details"
+          >
+            Close ✕
+          </button>
+          <div id="dialogContent"></div>
+        </div>
+      </dialog>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Nigeria Demographics Explorer</strong>
+          <p>Learn about Nigeria's states, people, and cultural diversity.</p>
+          <p>© <span id="year"></span> Nigeria Demographics Explorer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="feedback.html">Feedback</a
+          ><a href="attributions.html">Attributions</a
+          ><a
+            href="https://www.loom.com/share/c71a80b4f23f415fb1861a3dcba4d957"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Video demonstration</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="scripts/common.mjs"></script>
+  </body>
+</html>

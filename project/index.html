@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Nigeria Demographics Explorer | Home</title>
+    <meta
+      name="description"
+      content="Discover Nigeria's states, geopolitical zones, languages, and cultural diversity with an interactive learning website."
+    />
+    <meta name="author" content="Samuel Asiabaka" />
+    <meta name="theme-color" content="#14532d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nigeria Demographics Explorer | Home" />
+    <meta
+      property="og:description"
+      content="Discover Nigeria's states, geopolitical zones, languages, and cultural diversity with an interactive learning website."
+    />
+    <meta property="og:image" content="favicon.svg" />
+    <meta property="og:site_name" content="Nigeria Demographics Explorer" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script type="module" src="scripts/home.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark" aria-hidden="true">NG</span
+          ><span>Nigeria Demographics Explorer</span></a
+        ><button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Open navigation menu"
+        >
+          ☰ Menu
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <a href="index.html" data-nav="index">Home</a
+          ><a href="explore.html" data-nav="explore">Explore states</a
+          ><a href="quiz.html" data-nav="quiz">Knowledge quiz</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <span class="eyebrow">A country of many stories</span>
+            <h1>Discover the diversity of Nigeria.</h1>
+            <p>
+              Explore state capitals, geopolitical zones, population estimates,
+              land area, ethnic communities, and languages in one accessible
+              learning experience.
+            </p>
+            <p>
+              <a class="button" href="explore.html">Explore all states</a>
+              <a class="button outline" href="quiz.html">Test your knowledge</a>
+            </p>
+          </div>
+          <div
+            class="hero-art"
+            role="img"
+            aria-label="Decorative green and gold graphic representing Nigeria's diversity"
+          >
+            <span>36 states + the FCT</span
+            ><strong>One country.<br />Many cultures.</strong
+            ><span>Explore. Learn. Celebrate.</span>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Nigeria at a glance</span>
+              <h2>Start with the big picture</h2>
+              <p>
+                These figures describe the structure of the explorer, not a live
+                population count.
+              </p>
+            </div>
+          </div>
+          <div class="stats">
+            <article class="stat">
+              <strong>37</strong><span>State and FCT entries</span>
+            </article>
+            <article class="stat">
+              <strong>6</strong><span>Geopolitical zones</span>
+            </article>
+            <article class="stat">
+              <strong>500+</strong
+              ><span
+                >Languages spoken nationally (commonly cited estimate)</span
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Explore your way</span>
+              <h2>Choose your next discovery</h2>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="symbol" aria-hidden="true">⌕</div>
+              <h3>Find a state</h3>
+              <p>
+                Search by state name, capital, region, ethnic community, or
+                language. Sort the results to compare entries.
+              </p>
+              <a href="explore.html">Browse state data →</a>
+            </article>
+            <article class="feature-card">
+              <div class="symbol" aria-hidden="true">☆</div>
+              <h3>Save favourites</h3>
+              <p>
+                Keep a personal shortlist in this browser using local storage,
+                then return to it whenever you visit.
+              </p>
+              <a href="explore.html#favorites">View saved states →</a>
+            </article>
+            <article class="feature-card">
+              <div class="symbol" aria-hidden="true">✓</div>
+              <h3>Check what you know</h3>
+              <p>
+                Answer short questions about Nigeria's geography and culture and
+                see feedback after each answer.
+              </p>
+              <a href="quiz.html">Start the quiz →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="wrap panel">
+          <h2>Explore responsibly</h2>
+          <p>
+            Population figures are estimates and can vary by source and year.
+            Cultural and language information is simplified for introductory
+            learning; communities are diverse within and across state
+            boundaries.
+          </p>
+          <p class="data-source">
+            State records are provided in the site's local JSON data file for
+            dependable, repeatable classroom demonstrations.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-grid">
+        <div>
+          <strong>Nigeria Demographics Explorer</strong>
+          <p>Learn about Nigeria's states, people, and cultural diversity.</p>
+          <p>© <span id="year"></span> Nigeria Demographics Explorer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="feedback.html">Feedback</a
+          ><a href="attributions.html">Attributions</a
+          ><a
+            href="https://www.loom.com/share/c71a80b4f23f415fb1861a3dcba4d957"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Video demonstration</a
+          >
+        </nav>
+      </div>
+    </footer>
+    <script type="module" src="scripts/common.js"></script>
+  </body>
+</html>
