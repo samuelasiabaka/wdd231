@@ -1,0 +1,82 @@
+[
+  {
+    "id": "lekki-conservation-centre",
+    "title": "Lekki Conservation Centre",
+    "address": "Km 19, Lekki\u2013Epe Expressway, Lagos",
+    "description": "A nature reserve with canopy walks and boardwalks through a protected wetland environment.",
+    "image": "lekki-conservation-centre.webp",
+    "alt": "Green forest canopy and a wooden nature walkway",
+    "button": "Learn More",
+    "url": "https://ncfnigeria.org/lekki-conservation-centre/"
+  },
+  {
+    "id": "national-theatre",
+    "title": "National Theatre",
+    "address": "Iganmu, Lagos",
+    "description": "A major cultural landmark associated with Nigerian arts, performance, and heritage.",
+    "image": "national-theatre.webp",
+    "alt": "Modern cultural centre with a broad curved roof",
+    "button": "Learn More",
+    "url": "https://www.google.com/search?q=National+Theatre+Lagos"
+  },
+  {
+    "id": "lekki-ikoyi-bridge",
+    "title": "Lekki\u2013Ikoyi Link Bridge",
+    "address": "Lekki / Ikoyi, Lagos",
+    "description": "A striking cable-stayed bridge and a recognizable feature of the Lagos waterfront.",
+    "image": "lekki-ikoyi-bridge.webp",
+    "alt": "Cable-stayed bridge crossing blue lagoon water",
+    "button": "Learn More",
+    "url": "https://www.google.com/search?q=Lekki+Ikoyi+Link+Bridge"
+  },
+  {
+    "id": "tafa-balogun-market",
+    "title": "Balogun Market",
+    "address": "Lagos Island, Lagos",
+    "description": "A busy commercial district known for wholesale and retail trade across many product categories.",
+    "image": "balogun-market.webp",
+    "alt": "Colourful market stalls and busy shopping street",
+    "button": "Learn More",
+    "url": "https://www.google.com/search?q=Balogun+Market+Lagos"
+  },
+  {
+    "id": "freedom-park",
+    "title": "Freedom Park",
+    "address": "Broad Street, Lagos Island",
+    "description": "A heritage and arts destination on the site of the former colonial-era prison, now used for events and performances.",
+    "image": "freedom-park.webp",
+    "alt": "Garden courtyard with trees and heritage buildings",
+    "button": "Learn More",
+    "url": "https://www.google.com/search?q=Freedom+Park+Lagos"
+  },
+  {
+    "id": "nike-art-gallery",
+    "title": "Nike Art Gallery",
+    "address": "No. 2 Elegushi Road, Lekki, Lagos",
+    "description": "A well-known art space showcasing Nigerian visual arts, textiles, and cultural creativity.",
+    "image": "nike-art-gallery.webp",
+    "alt": "Gallery wall displaying colourful Nigerian-inspired artworks",
+    "button": "Learn More",
+    "url": "https://www.google.com/search?q=Nike+Art+Gallery+Lagos"
+  },
+  {
+    "id": "jhalobia-recreation",
+    "title": "Jhalobia Recreation Park",
+    "address": "Airport Road, Lagos",
+    "description": "A landscaped garden venue often associated with outdoor events, relaxation, and photography.",
+    "image": "jhalobia-park.webp",
+    "alt": "Landscaped green garden with palms and walking path",
+    "button": "Learn More",
+    "url": "https://www.google.com/search?q=Jhalobia+Recreation+Park"
+  },
+  {
+    "id": "computer-village",
+    "title": "Computer Village",
+    "address": "Otigba Street, Ikeja, Lagos",
+    "description": "A major technology and electronics trading cluster supporting device sales, repairs, and related services.",
+    "image": "computer-village.webp",
+    "alt": "Urban technology market street with electronics shops",
+    "button": "Learn More",
+    "url": "https://www.google.com/search?q=Computer+Village+Ikeja"
+  }
+]

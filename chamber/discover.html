@@ -20,7 +20,7 @@
 
     <meta
       property="og:url"
-      content="https://samuelasiabaka.github.io/wdd231/chamber/directory.html"
+      content="https://samuelasiabaka.github.io/wdd231/chamber/discover.html"
     />
     <meta property="og:type" content="website" />
     <title>Discover Lagos | Lagos Chamber of Commerce and Industry</title>
@@ -73,29 +73,17 @@
           and services. This page uses local highlights to orient visitors to
           the community.
         </p>
-        <div class="montage">
-          <figure>
-            <img
-              src="images/discover/lagos-skyline.svg"
-              alt="Stylized Lagos skyline"
-            />
-            <figcaption>Lagos skyline</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="images/discover/lekki-bridge.svg"
-              alt="Stylized Lekki-Ikoyi Link Bridge"
-            />
-            <figcaption>Lekki-Ikoyi area</figcaption>
-          </figure>
-          <figure>
-            <img
-              src="images/discover/national-theatre.svg"
-              alt="Stylized National Theatre"
-            />
-            <figcaption>National Theatre</figcaption>
-          </figure>
-        </div>
+        <section class="section discover-overview" aria-labelledby="discover-overview-title">
+          <div class="section-header">
+            <span class="eyebrow">Local highlights</span>
+            <h2 id="discover-overview-title">Places that tell the Lagos story</h2>
+            <p>Explore cultural landmarks, green spaces, and commercial districts across the city.</p>
+          </div>
+          <p id="visit-message" class="visit-message" role="status" aria-live="polite"></p>
+          <div id="discover-grid" class="discover-grid" aria-live="polite">
+            <p class="loading-message">Loading Lagos places…</p>
+          </div>
+        </section>
         <section class="section">
           <div class="cards-3">
             <article class="info-card">
@@ -127,49 +115,55 @@
             </article>
           </div>
         </section>
-        <section class="section">
+        <section class="section" aria-labelledby="business-title">
           <div class="section-header">
-            <span class="eyebrow">Current events</span>
-            <h2>Upcoming chamber activities</h2>
+            <span class="eyebrow">Business landscape</span>
+            <h2 id="business-title">Many sectors, one connected city</h2>
           </div>
           <div class="cards-3">
             <article class="info-card">
-              <div class="icon-circle">23</div>
-              <h2>LCCI 2026 Annual Agro-Allied Symposium &amp; Exhibition</h2>
-              <p>
-                <strong>September 23–24, 2026 · 10:00 AM</strong><br />LCCI
-                Conference &amp; Exhibition Center, Ikeja.
-              </p>
+              <div class="icon-circle" aria-hidden="true">01</div>
+              <h3>Trade and distribution</h3>
+              <p>Markets, ports, and logistics operators connect local businesses with customers and supply chains across Nigeria.</p>
             </article>
             <article class="info-card">
-              <div class="icon-circle">28</div>
-              <h2>World Tourism Day 2026</h2>
-              <p>
-                <strong>September 28, 2026 · 10:30 AM</strong><br />Victoria
-                Island, Lagos.
-              </p>
+              <div class="icon-circle" aria-hidden="true">02</div>
+              <h3>Technology and enterprise</h3>
+              <p>Technology clusters and professional services support entrepreneurs, growing companies, and digital transformation.</p>
             </article>
             <article class="info-card">
-              <div class="icon-circle">29</div>
-              <h2>Petroleum Downstream Industry Symposium</h2>
-              <p>
-                <strong>September 29, 2026 · 11:00 AM</strong><br />Commerce
-                House, Victoria Island.
-              </p>
+              <div class="icon-circle" aria-hidden="true">03</div>
+              <h3>Culture and tourism</h3>
+              <p>Arts, heritage, recreation, and events create opportunities for hospitality businesses and the wider creative economy.</p>
             </article>
           </div>
-          <p class="form-note">
-            Event information checked against the LCCI events listings on
-            September 19, 2026. See the official events calendar for changes and
-            registration details.
-          </p>
         </section>
 
+        <section class="section" aria-labelledby="community-title">
+          <div class="section-header">
+            <span class="eyebrow">Community snapshot</span>
+            <h2 id="community-title">A connected commercial ecosystem</h2>
+          </div>
+          <div class="cards-3">
+            <article class="info-card">
+              <div class="icon-circle" aria-hidden="true">01</div>
+              <h3>Trade and logistics</h3>
+              <p>Lagos connects businesses through ports, markets, road networks, and regional distribution channels.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon-circle" aria-hidden="true">02</div>
+              <h3>Innovation and services</h3>
+              <p>Technology, finance, professional services, and creative enterprises contribute to the city's diverse economy.</p>
+            </article>
+            <article class="info-card">
+              <div class="icon-circle" aria-hidden="true">03</div>
+              <h3>Culture and recreation</h3>
+              <p>Arts venues, parks, heritage sites, and public events offer opportunities to connect with Lagos communities.</p>
+            </article>
+          </div>
+        </section>
         <div class="banner">
-          <strong>Project note:</strong> Demographic statistics intentionally
-          are not hard-coded here so the academic site does not present an
-          outdated figure as current. Replace this area with a cited official
-          demographic source when your instructor requires specific numbers.
+          <strong>Visitor tip:</strong> Confirm opening hours, admission requirements, and travel conditions with each destination before visiting.
         </div>
       </div>
     </main>

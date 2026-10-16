@@ -748,3 +748,123 @@ textarea {
     margin-bottom: 0.45rem;
   }
 }
+
+
+/* W05 Discover page: data-driven location cards and three named-area layouts */
+.visit-message {
+  background: var(--light-green);
+  border-left: 4px solid var(--primary-green);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--primary-green-dark);
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+  padding: 0.9rem 1rem;
+}
+.discover-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "place-one"
+    "place-two"
+    "place-three"
+    "place-four"
+    "place-five"
+    "place-six"
+    "place-seven"
+    "place-eight";
+  gap: 1rem;
+}
+.discover-card {
+  min-width: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card, #fff);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.discover-card-media {
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  background: var(--light-green);
+}
+.discover-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.discover-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.discover-card-content h3 {
+  color: var(--primary-green-dark);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  line-height: 1.35;
+  margin-bottom: 0.45rem;
+}
+.discover-card-content p {
+  overflow-wrap: anywhere;
+  margin-bottom: 0.75rem;
+}
+.discover-card-content .discover-address {
+  color: var(--text-medium);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+.discover-learn-more {
+  margin-top: auto;
+  min-height: 44px;
+}
+.loading-message {
+  padding: 1rem;
+}
+@media (min-width: 650px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "place-one place-two"
+      "place-three place-three"
+      "place-four place-five"
+      "place-six place-seven"
+      "place-eight place-eight";
+    align-items: stretch;
+  }
+}
+@media (min-width: 1000px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "place-one place-one place-two place-three"
+      "place-one place-one place-two place-four"
+      "place-five place-six place-seven place-eight";
+    gap: 1.25rem;
+  }
+  .discover-card-media {
+    aspect-ratio: 4 / 3;
+  }
+  .discover-card-content {
+    padding: 1.1rem;
+  }
+  .discover-card-content h3 {
+    font-size: 1.05rem;
+  }
+  .discover-card-media img {
+    transition: transform 220ms ease, filter 220ms ease;
+  }
+  .discover-card-media:hover img {
+    transform: scale(1.06);
+    filter: saturate(1.12);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .discover-card-media img {
+    transition: none;
+  }
+}

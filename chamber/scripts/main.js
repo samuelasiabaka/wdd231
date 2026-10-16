@@ -11,6 +11,84 @@ function setYearAndModifiedDate() {
     modified.textContent = `Last Modified: ${document.lastModified}`;
 }
 
+
+const discoverAreaNames = [
+  "place-one", "place-two", "place-three", "place-four",
+  "place-five", "place-six", "place-seven", "place-eight"
+];
+
+function setupVisitMessage() {
+  const message = qs("#visit-message");
+  if (!message) return;
+  const key = "lcci-discover-last-visit";
+  const now = Date.now();
+  const previous = Number(localStorage.getItem(key));
+  if (!previous || !Number.isFinite(previous)) {
+    message.textContent = "Welcome! This is your first recorded visit to the Discover Lagos page.";
+  } else {
+    const days = Math.floor((now - previous) / 86400000);
+    if (days < 1) {
+      message.textContent = "Welcome back! You visited this page less than a day ago.";
+    } else if (days === 1) {
+      message.textContent = "Welcome back! Your last visit was yesterday.";
+    } else {
+      message.textContent = `Welcome back! Your last visit was ${days} days ago.`;
+    }
+  }
+  localStorage.setItem(key, String(now));
+}
+
+function createDiscoverCard(place, index) {
+  const card = document.createElement("article");
+  card.className = "discover-card";
+  card.style.gridArea = discoverAreaNames[index] || `place-${index + 1}`;
+  const image = document.createElement("img");
+  image.src = `images/discover/${place.image}`;
+  image.alt = place.alt;
+  image.loading = "lazy";
+  image.decoding = "async";
+  image.width = 900;
+  image.height = 560;
+  const media = document.createElement("div");
+  media.className = "discover-card-media";
+  media.append(image);
+  const content = document.createElement("div");
+  content.className = "discover-card-content";
+  const title = document.createElement("h3");
+  title.textContent = place.title;
+  const address = document.createElement("p");
+  address.className = "discover-address";
+  address.textContent = place.address;
+  const description = document.createElement("p");
+  description.textContent = place.description;
+  const link = document.createElement("a");
+  link.className = "btn btn-primary discover-learn-more";
+  link.href = place.url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.textContent = place.button || "Learn More";
+  content.append(title, address, description, link);
+  card.append(media, content);
+  return card;
+}
+
+async function loadDiscoverPlaces() {
+  const grid = qs("#discover-grid");
+  if (!grid) return;
+  try {
+    const response = await fetch("data/discover.json");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const places = await response.json();
+    if (!Array.isArray(places) || places.length !== 8) {
+      throw new Error("Expected eight discover locations");
+    }
+    grid.replaceChildren(...places.map(createDiscoverCard));
+  } catch (error) {
+    grid.innerHTML = '<p class="banner"><strong>Places could not be loaded.</strong> Please refresh the page and try again.</p>';
+    console.error("Discover places failed to load:", error);
+  }
+}
+
 function setupNavigation() {
   const button = qs(".menu-button");
   const nav = qs(".primary-nav");
@@ -155,3 +233,6 @@ loadDirectory();
 setupViewToggle();
 loadWeather();
 setupJoinPage();
+
+setupVisitMessage();
+loadDiscoverPlaces();
